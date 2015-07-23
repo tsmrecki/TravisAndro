@@ -2,16 +2,23 @@ package demo.travisandro.travisandro;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends TopActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        nekibroj = 3;
+
+        ((TextView)findViewById(R.id.prikaz_broja)).setText(String.valueOf(nekibroj));
+        
     }
 
     @Override
