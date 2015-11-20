@@ -18,7 +18,7 @@ public class MainActivity extends TopActivity {
         nekibroj = 3;
 
         ((TextView)findViewById(R.id.prikaz_broja)).setText(String.valueOf(nekibroj));
-        
+
     }
 
     @Override
